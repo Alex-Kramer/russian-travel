@@ -2,31 +2,32 @@
 @import url(./__title/intro__title.css);
 @import url(./__text/intro__text.css);
 @import url(./__list/intro__list.css);
+@import url(./__list-weight/intro__list-weight.css);
 
 .intro{
-    display: flex;
-    flex-direction: column;
-    max-width: 690px;
-    min-height: 428px;
-    /*border: 1px solid white;*/
-    padding: 0 442px 92px 148px;
+  display: flex;
+  flex-direction: column;
+  max-width: 690px;
+  min-height: 428px;
+  /*border: 1px solid white;*/
+  padding: 0 442px 92px 148px;
 }
 
 @media screen and (max-width: 1024px){
-    .intro{
-      padding: 0 286px 92px 48px;  
-    }
+  .intro{
+    padding: 0 286px 92px 48px;  
+  }
 }
 
 
 @media screen and (max-width: 768px){
-    .intro{
-      padding: 0 24px 88px 24px;  
-    }
+  .intro{
+    padding: 0 24px 88px 24px;  
+  }
 }
 
 @media screen and (max-width: 320px){
-    .intro{
-      padding: 0 16px 64px 16px;  
-    }
+  .intro{
+    padding: 0 16px 64px 16px;  
+  }
 }

@@ -4,6 +4,7 @@
 @import url(./__title/place__title.css);
 @import url(./__url-heading/place__url-heading.css);
 @import url(./__website/place__website.css);
+@import url(./__text/place__text.css);
 
 .place{
   display: grid;
@@ -14,26 +15,35 @@
 }
 
 .place:nth-of-type(5){
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 @media screen and (max-width:1024px){
-    .place{
-        grid-gap: 32px;
-    }
+  .place{
+    grid-gap: 32px;
+    grid-template-rows: minmax(216px, 340px) minmax(min-content, max-content));
+    grid-template-columns: minmax(288px, 340px) minmax(min-content, max-content);
+  }
 }
 
 
-@media screen and (max-width:1024px){
-    .place{
-        grid-gap: 28px;
-        padding-bottom: 72px;
-    }
+@media screen and (max-width:770px){
+  .place{
+    grid-gap: 28px;
+    padding-bottom: 72px;
+  }
+}
+
+@media screen and (max-width:760px){
+  .place{
+    grid-template-columns: minmax(320px, max-content);
+    padding-bottom: 48px;
+  }
 }
 
 @media screen and (max-width:320px){
-    .place{
-      grid-template-columns: minmax(320px, max-content);
-      padding-bottom: 48px;
-    }
+  .place{
+    grid-template-columns: minmax(320px, max-content);
+    padding-bottom: 48px;
+  }
 }

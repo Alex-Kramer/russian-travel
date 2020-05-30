@@ -1,5 +1,10 @@
 .header__links{
   display: flex;
   align-items: center;
+}
 
+@media screen and (max-width: 760px){
+  .header__links{
+    padding-right: 16px;
+  }
 }
